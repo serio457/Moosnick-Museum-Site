@@ -6,17 +6,24 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Upload Data :)</title>
 </head>
-<body>
-
+<body bgcolor=#9D2235>
+  
 
  <!-- add stuff to firebase -->
  <center>
+  <h1>ENTER AN ITEM</h1>
   <h2>Name:</h2>
   <input type="text" id="name" required="required"><br>
   <h2>Date of Manufacture:</h2>
   <input type="text" id="dateOfManufacture" required="required"><br>
+  <!--MAKE DESCRIPTION BOX BIGGER SO USER CAN SEE WTF THEY'RE WRITING IN INSTEAD OF A LITERAL LINE-->
+  <!--GIVE THE BOX A WRAPAROUND AND A FOLLOW CURSEY BOI-->
   <h2>Description:</h2>
   <input type="text" id="description" required="required"><br>
+
+  <!--Currently does not work, but hypothetical phase-->
+  <!--Image link would be local to KMo's server where the website is being hosted-->
+  <!--It would source the image from a pictures folder that is local to the project-->
   <h2>Image Link:</h2>
   <input type="text" id="imageLink" required="required"><br>
   <h2>Keywords:</h2>
@@ -36,7 +43,7 @@
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-analytics.js"></script>
-
+<!-- TODO: Whenever someone enters an image link, write the code directly to this with image source-->
 <script>
   // Your web app's Firebase configuration
   var firebaseConfig = {
